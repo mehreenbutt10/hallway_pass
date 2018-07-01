@@ -1,0 +1,69 @@
+<html>
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</head>
+
+<body>
+
+    <div class="carousel carousel-slider">
+    <a class="carousel-item" href="#one!"><img src="https://media.istockphoto.com/photos/old-fashioned-cocktail-picture-id499543140?k=6&m=499543140&s=612x612&w=0&h=kov_66GnUE9Xhs_rR4UoQb3m2JmNkLd1wncaX3ilBCE="></a>
+    <a class="carousel-item" href="#two!"><img src="https://media.istockphoto.com/photos/cocktail-drink-on-night-club-picture-id680865608?k=6&m=680865608&s=612x612&w=0&h=-yPJW8WEZ47FDpFou_9XRqMqbLAq_LAJIbOz_fc_V28="></a>
+    <a class="carousel-item" href="#three!"><img src="https://foodandstyle.com/wp-content/uploads/2014/03/IMG_1992-Popcorn-with-rosemary-butter-and-Parmesan-750.jpg"></a>
+    <a class="carousel-item" href="#four!"><img src="https://media.istockphoto.com/photos/bartender-finished-decorating-his-cocktail-picture-id838386212?k=6&m=838386212&s=612x612&w=0&h=KBKqApl_kla4Vhxk76mj24908RuuQ0O-w1kx1EJlsn8="></a>
+  </div>
+<div class="buttons-wrapper">
+  <div class="row center">
+  <button class="btn">BAR FEUTZ</button>
+</div>
+</div>
+</body>
+
+<script>
+$(document).ready(function(){
+  $('.carousel').carousel({
+
+      fullWidth:true,
+      indicators:true
+
+    }).height(700);
+  });
+ </script>
+
+ <style>
+ .indicator-item{
+   padding: 10px;
+ }
+ .btn{
+   background-color: #000;
+   font-size: 26px;
+   border: solid 5px;
+   border-color: white;
+   padding: 10px 30px 45px 30px;
+ }
+
+ .buttons-wrapper:hover{
+
+   background-color: #111;
+   border-color: black;
+ }
+ .buttons-wrapper {
+    position: absolute;
+    height: calc(100vh);
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 997;
+    top: 0;
+    pointer-events: none;
+    width: 100%;
+}
+.buttons-wrapper a {
+  pointer-events: auto;
+}
+ </style>
+
+</html>
